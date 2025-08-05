@@ -1,7 +1,7 @@
 // src/components/Projects.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ecommerceImage from '../assets/ecommerce-mockup.jpg'; 
+import ecommerceImage from '../assets/ecommerce-mockup.jpg'; // Make sure this image exists in src/assets
 
 // Dummy data for projects. Replace with your own.
 const projects = [
@@ -47,11 +47,18 @@ const Projects = () => {
               <h2 className="text-4xl font-russo text-white uppercase mb-4">{selectedProject.title}</h2>
               <p className="text-gray-400 mb-6">{selectedProject.description}</p>
               
-              <div className="flex items-center space-x-8">
-                <a href="#" className="inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-3 px-8 hover:bg-brand-yellow hover:text-navy transition duration-300">
+              {/* --- THIS IS THE UPDATED SECTION --- */}
+              <div className="flex items-center justify-between">
+                {/* Year is now on the left */}
+                <span className="font-russo text-gray-600">2025</span>
+                
+                {/* Button is now on the right with the new style */}
+                <a 
+                  href="#" 
+                  className="inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-2 px-5 rounded-lg shadow-[-4px_4px_0px_#FFA500] hover:shadow-none hover:-translate-x-1 hover:translate-y-1 transition-all duration-200"
+                >
                   {'>>'} LIVE
                 </a>
-                <span className="font-russo text-gray-600">2025</span>
               </div>
               
               {/* Project Selector */}

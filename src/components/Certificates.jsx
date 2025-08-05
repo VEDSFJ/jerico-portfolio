@@ -1,5 +1,3 @@
-// src/components/Certificates.jsx
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCertificate, FaLink } from 'react-icons/fa'; // We use icons for a nice visual touch

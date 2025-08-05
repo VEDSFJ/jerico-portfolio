@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
+
 import React from 'react';
-import profilePhoto from '../assets/profile.jpg'; // Make sure you have this image
+import profilePhoto from '../assets/profile.jpg'; 
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -37,9 +38,15 @@ const Hero = () => {
             "Developers are meant to learn and adapt to the current tech trends.
             AI should become a tool not a threat."
           </p>
-          <a href="#projects" className="inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-3 px-8 hover:bg-brand-yellow hover:text-navy transition duration-300">
+
+          {/* --- THIS IS THE UPDATED BUTTON --- */}
+          <a 
+            href="#projects" 
+              className="mt-4 inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-2 px-5 rounded-lg shadow-[-4px_4px_0px_#FFA500] hover:shadow-none hover:-translate-x-1 hover:translate-y-1 transition-all duration-200"
+          >
             {'>>'} VIEW PROJECTS
           </a>
+
         </motion.div>
 
       </div>
