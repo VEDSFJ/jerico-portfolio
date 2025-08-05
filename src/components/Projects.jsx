@@ -1,4 +1,3 @@
-// src/components/Projects.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ecommerceImage from '../assets/ecommerce-mockup.jpg'; // Make sure this image exists in src/assets

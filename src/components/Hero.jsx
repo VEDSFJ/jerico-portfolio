@@ -1,5 +1,3 @@
-// src/components/Hero.jsx
-
 import React from 'react';
 import profilePhoto from '../assets/profile.jpg'; 
 import { motion } from 'framer-motion';
