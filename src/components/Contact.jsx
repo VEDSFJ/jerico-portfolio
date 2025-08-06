@@ -85,7 +85,7 @@ const Contact = () => {
 
           {/* Column 3: Follow Me (New U-Shape Style) */}
           <div>
-            <h3 className="text-2xl font-russo text-white uppercase mb-6">
+            <h3 className="text-2xl font-russo text-white uppercase mb-6 translate-x-[6.9%]">
               FOLLOW <span className="text-brand-yellow">ME</span>
             </h3>
             {/* Parent container needs to be relative and have a set height */}
@@ -93,7 +93,7 @@ const Contact = () => {
               
               {/* Center "X" Icon (Twitter) */}
               <a href="https://www.twitter.com/your-username" target="_blank" rel="noopener noreferrer" 
-                 className="absolute top-[0%] left-[41%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
+                 className="absolute top-[2%] left-[2%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
                 <FaTwitter />
               </a>
 
@@ -101,25 +101,25 @@ const Contact = () => {
               
               {/* Facebook Icon */}
               <a href="https://www.facebook.com/contact.ocirej.dev.nigg4" target="_blank" rel="noopener noreferrer" 
-                 className="absolute top-[25%] left-[10%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
+                 className="absolute top-[25%] left-[8%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
                 <FaFacebookF />
               </a>
               
               {/* LinkedIn Icon */}
               <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" 
-                 className="absolute top-[60%] left-[0%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
+                 className="absolute top-[35%] left-[22%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
                 <FaLinkedinIn />
               </a>
 
               {/* GitHub Icon */}
               <a href="https://github.com/VEDSFJ" target="_blank" rel="noopener noreferrer" 
-                 className="absolute top-[75%] left-[41%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
+                 className="absolute top-[25%] left-[36%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
                 <FaGithub />
               </a>
               
               {/* Instagram Icon */}
               <a href="#" target="_blank" rel="noopener noreferrer" 
-                 className="absolute top-[60%] left-[82%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
+                 className="absolute top-[2%] left-[42%] w-14 h-14 bg-brand-yellow text-white hover:bg-white hover:text-red-500 rounded-full flex items-center justify-center text-2xl transition-all duration-300">
                 <FaInstagram />
               </a>
             </div>
