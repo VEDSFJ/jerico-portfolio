@@ -1,5 +1,4 @@
-// src/App.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -7,6 +6,16 @@ import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 
 function App() {
+  useEffect(() => {
+    const handleContextmenu = e => {
+      e.preventDefault();
+    };
+    document.addEventListener('contextmenu', handleContextmenu);
+    return function cleanup() {
+      document.removeEventListener('contextmenu', handleContextmenu);
+    };
+  }, []);
+
   return (
     <div>
       <Header />
@@ -20,7 +29,7 @@ function App() {
         © 2025 Jerico. All Rights Reserved.
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

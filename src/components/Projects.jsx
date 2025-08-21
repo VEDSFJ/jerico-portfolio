@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
-// --- 1. Import all your project images and logos ---
 import ecommerceImage from '../assets/ecommerce-mockup.png';
 import chatAppImage from '../assets/chatapp-mockup.png';
 import dashboardImage from '../assets/dashboard-mockup.png';
@@ -9,36 +7,14 @@ import p1Logo from '../assets/P1.png';
 import p2Logo from '../assets/P2.png';
 import p3Logo from '../assets/P3.png';
 
-// --- 2. Your project data array, now with the correct local logo imports ---
 const projects = [
-  {
-    id: 1,
-    title: 'E-commerce Platform',
-    description: 'Developed a complete e-commerce platform using Laravel and Vue.js. The project features robust product management, a shopping cart, and a secure payment gateway powered by Stripe.',
-    image: ecommerceImage,
-    logo: p1Logo
-  },
-  {
-    id: 2,
-    title: 'Real-time Chat App',
-    description: 'Created a real-time chat application using React, Node.js, and Socket.IO. The app allows users to join different chat rooms and exchange messages instantly.',
-    image: chatAppImage,
-    logo: p2Logo
-  },
-  {
-    id: 3,
-    title: 'Data Dashboard',
-    description: 'Designed and built a dynamic data dashboard with PHP and Chart.js. It connects to a MongoDB Atlas database to visualize key business metrics in a clean, user-friendly interface.',
-    image: dashboardImage,
-    logo: p3Logo
-  }
+  { id: 1, title: 'E-commerce Platform', description: 'Developed a complete e-commerce platform using Laravel and Vue.js. The project features robust product management, a shopping cart, and a secure payment gateway powered by Stripe.', image: ecommerceImage, logo: p1Logo },
+  { id: 2, title: 'Real-time Chat App', description: 'Created a real-time chat application using React, Node.js, and Socket.IO. The app allows users to join different chat rooms and exchange messages instantly.', image: chatAppImage, logo: p2Logo },
+  { id: 3, title: 'Data Dashboard', description: 'Designed and built a dynamic data dashboard with PHP and Chart.js. It connects to a MongoDB Atlas database to visualize key business metrics in a clean, user-friendly interface.', image: dashboardImage, logo: p3Logo }
 ];
 
 const Projects = () => {
-  // --- 3. State to manage the currently selected project index ---
   const [activeIndex, setActiveIndex] = useState(0); 
-
-  
   const selectedProject = projects[activeIndex];
 
   return (
@@ -46,12 +22,10 @@ const Projects = () => {
       id="projects" 
       className="relative min-h-screen flex items-center bg-navy py-20 overflow-hidden"
     >
-      {/* Background arc graphic */}
       <div 
         className="absolute top-0 right-0 w-full h-full bg-no-repeat"
         style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(252, 211, 77, 0.1), transparent 30%)' }}
       ></div>
-
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -60,8 +34,6 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Side: Project Details */}
             <div>
               <motion.div
                 key={selectedProject.id} 
@@ -74,7 +46,6 @@ const Projects = () => {
                 </h2>
                 <p className="text-gray-400 mb-6">{selectedProject.description}</p>
               </motion.div>
-              
               <div className="flex items-center justify-between mt-8">
                 <span className="font-russo text-gray-600">2025</span>
                 <a 
@@ -84,8 +55,6 @@ const Projects = () => {
                   &gt;&gt; LIVE
                 </a>
               </div>
-              
-              {/* --- 4. The new Project Selector --- */}
               <div className="mt-16 flex justify-center items-center space-x-4">
                 {projects.map((project, index) => (
                   <div 
@@ -103,8 +72,6 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-
-            {/* Right Side: Project Image */}
             <div className="relative">
               <motion.img 
                 key={selectedProject.id + '-image'} 
@@ -116,7 +83,6 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
               />
             </div>
-
           </div>
         </motion.div>
       </div>

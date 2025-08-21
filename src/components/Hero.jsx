@@ -6,8 +6,6 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center bg-navy">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-6 md:px-12">
-        
-        {/* Left Side: Image */}
         <motion.div 
           className="w-full md:w-2/5 lg:w-1/3 p-4"
           initial={{ opacity: 0, x: -50 }}
@@ -18,8 +16,6 @@ const Hero = () => {
             <img src={profilePhoto} alt="Jerico" className="w-full h-full object-cover"/>
           </div>
         </motion.div>
-
-        {/* Right Side: Text Content */}
         <motion.div 
           className="w-full md:w-3/5 lg:w-2/3 text-center md:text-left p-4 md:pl-12"
           initial={{ opacity: 0, x: 50 }}
@@ -36,17 +32,13 @@ const Hero = () => {
             "Developers are meant to learn and adapt to the current tech trends.
             AI should become a tool not a threat."
           </p>
-
-          {/* --- THIS IS THE UPDATED BUTTON --- */}
           <a 
             href="#projects" 
-              className="mt-4 inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-2 px-5 rounded-lg shadow-[-4px_4px_0px_#FFA500] hover:shadow-none hover:-translate-x-1 hover:translate-y-1 transition-all duration-200"
+            className="mt-4 inline-block bg-transparent border-2 border-brand-yellow text-brand-yellow font-bold py-2 px-5 rounded-lg shadow-[-4px_4px_0px_#FFA500] hover:shadow-none hover:-translate-x-1 hover:translate-y-1 transition-all duration-200"
           >
             {'>>'} VIEW PROJECTS
           </a>
-
         </motion.div>
-
       </div>
     </section>
   );
